@@ -12,6 +12,7 @@ output "acr_admin_login" {
 }
 output "acr_admin_password" {
     value = "${azurerm_container_registry.acr.admin_password}"
+    sensitive   = true
 }
 output "acr_loginserver" {
     value = "${azurerm_container_registry.acr.login_server}"
